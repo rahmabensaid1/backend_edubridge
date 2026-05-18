@@ -1,17 +1,16 @@
 {
-
   "compilerOptions": {
     "target": "ES6",
-    "module": "commonjs",
+    "module": "CommonJS",
     "rootDir": "./src",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck":true,
+    "skipLibCheck": true,
     "lib": ["es2020"],
-    "types": ["node"],   
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "types": ["node"],
+    "emitDecoratorMetadata" : true,
+    "experimentalDecorators":true,
     "strictPropertyInitialization": false
   },
   "include": ["src", "migrations"],

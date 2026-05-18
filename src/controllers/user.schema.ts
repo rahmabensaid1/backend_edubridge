@@ -10,6 +10,7 @@ export const ValidateUserSchema= z.object({
     status :z.enum(UserStatus),
     avatar:z.string().min(6,"Avatar must be at least 6 caracters"),
     
+    
 
 
 })

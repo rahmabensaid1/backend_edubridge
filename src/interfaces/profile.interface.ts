@@ -1,0 +1,36 @@
+export interface CreateProfile {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  phone?: string;
+  birthDate?: string;
+  sex?: string;
+  nationality?: string;
+  residenceCountry?: string;
+  language?: string;
+  studyLevel?: string;
+  obtainedDiploma?: string;
+  diplomaYear?: string;
+  specialty?: string;
+  generalAverage?: string;
+  strongSubjects?: string;
+  academicSkills?: string;
+  academicField?: string;
+  targetDegree?: string;
+  spokenLanguages?: string;
+  languageLevels?: string;
+  desiredField?: string;
+  desiredFormationType?: string;
+  preferredUniversities?: string;
+  preferredStudyLanguage?: string;
+  estimatedBudget?: string;
+  currentInstitution?: string;
+  address?: string;
+  city?: string;
+  country?: string;
+  bio?: string;
+  avatarUrl?: string;
+  academicDocuments?: string;
+  academicInterests?: string;
+  personalInterests?: string;
+}
