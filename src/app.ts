@@ -16,6 +16,9 @@ import chatbotRoutes from "./routes/chatbot.route";
 import recommendationRoutes from "./routes/recommendation.route";
 import statistiqueRoutes from "./routes/statistique.route";
 import dashboardRoutes from "./routes/dashboard.route";
+import housingOfferRoutes from "./routes/housing-offer.route";
+import { seedHousingOffers } from "./seeds/housing-offers.seed";
+import { seedChatbotResponses } from "./seeds/chatbot-responses.seed";
 
 import express from 'express';
 import userRoutes from './routes/user.route';
@@ -57,12 +60,15 @@ app.use("/chatbots", chatbotRoutes);
 app.use("/recommendations", authMiddleware, recommendationRoutes);
 app.use("/statistiques", authMiddleware, statistiqueRoutes);
 app.use("/dashboard", dashboardRoutes);
+app.use("/housing-offers", housingOfferRoutes);
 
 AppDataSource.initialize()
   .then(async () => {
     console.log("DataBase connected");
 
     await seedInstitutions();
+    await seedHousingOffers();
+    await seedChatbotResponses();
 
     app.listen(PORT, () => {
       console.log(`Server is running on http://localhost:${PORT}`);

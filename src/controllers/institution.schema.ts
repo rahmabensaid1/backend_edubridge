@@ -6,6 +6,7 @@ export const ValidateInstitutionSchema = z.object({
   siteWeb: z.string().optional(),
   email: z.string().email(),
   type: z.string(),
+  parentUniversity: z.string().optional(),
   pays: z.string(),
   logo: z.string().optional()
 });

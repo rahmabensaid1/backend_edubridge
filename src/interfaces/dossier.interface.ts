@@ -9,9 +9,12 @@ export interface IDossier {
   motif: string;
   fullName?: string;
   phone?: string;
+  phoneCountryCode?: string;
+  sex?: string;
   nationality?: string;
   lastDiploma?: string;
   motivation?: string;
+  completionScore?: number;
   createdAt: Date;
   updatedAt: Date;
 }

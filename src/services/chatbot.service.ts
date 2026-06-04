@@ -6,9 +6,46 @@ import { Formation } from "../entities/formation.entity";
 import { Profile } from "../entities/profile.entity";
 import { Dossier } from "../entities/dossier.entity";
 import { CreateChatbot } from "../interfaces/chatbot.interface";
+const chatbotFaq = require("../data/chatbot-faq.json") as { faq: FaqItem[] };
 
 const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+
+type FaqItem = {
+  id: number;
+  question: string;
+  answer: string;
+};
+
+const normalizeText = (value: string) =>
+  value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ");
+
+const getRelevantFaq = (message: string, faqItems: FaqItem[] = chatbotFaq.faq, limit = 8) => {
+  const keywords = new Set(
+    normalizeText(message)
+      .split(/\s+/)
+      .filter((word) => word.length > 2)
+  );
+
+  return faqItems
+    .map((item) => {
+      const faqText = normalizeText(`${item.question} ${item.answer}`);
+      const score = Array.from(keywords).reduce(
+        (total, keyword) => total + (faqText.includes(keyword) ? 1 : 0),
+        0
+      );
+
+      return { ...item, score };
+    })
+    .filter((item) => item.score > 0)
+    .sort((first, second) => second.score - first.score)
+    .slice(0, limit)
+    .map(({ score, ...item }) => item);
+};
 
 export class ChatbotService {
   private repo: Repository<Chatbot>;
@@ -31,7 +68,7 @@ export class ChatbotService {
   }
 
   async getChatbotsService(): Promise<Chatbot[]> {
-    return await this.repo.find();
+    return await this.repo.find({ order: { createdAt: "DESC" } });
   }
 
   async deleteChatbotService(id: number): Promise<boolean> {
@@ -39,7 +76,24 @@ export class ChatbotService {
     return !!result.affected;
   }
 
+  async updateChatbotService(id: number, data: CreateChatbot): Promise<Chatbot | null> {
+    const chatbot = await this.repo.findOne({ where: { id } });
+    if (!chatbot) return null;
+
+    Object.assign(chatbot, data);
+    return await this.repo.save(chatbot);
+  }
+
   async askChatbotService(message: string, userId?: number): Promise<string> {
+    const managedFaq = await this.repo.find();
+    const managedFaqItems = managedFaq
+      .filter((item) => item.active !== false)
+      .map((item) => ({
+        id: item.id,
+        question: item.nom,
+        answer: item.modele
+      }));
+
     const institutions = await this.institutionRepo.find({
       relations: ["formations"],
       take: 12
@@ -66,6 +120,7 @@ export class ChatbotService {
       : [];
 
     const appContext = {
+      faq: getRelevantFaq(message, [...managedFaqItems, ...chatbotFaq.faq]),
       institutions: institutions.map((institution) => ({
         name: institution.nom,
         city: institution.ville,
@@ -73,6 +128,7 @@ export class ChatbotService {
         website: institution.siteWeb,
         formations: institution.formations?.map((formation) => ({
           title: formation.titre,
+          domain: formation.domaine,
           level: formation.niveauRequis,
           fees: formation.fraisInscription,
           duration: formation.duree,
@@ -81,6 +137,7 @@ export class ChatbotService {
       })),
       formations: formations.map((formation) => ({
         title: formation.titre,
+        domain: formation.domaine,
         description: formation.description,
         level: formation.niveauRequis,
         fees: formation.fraisInscription,

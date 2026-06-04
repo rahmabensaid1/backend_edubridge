@@ -14,11 +14,17 @@ export class Chatbot {
   @Column()
   nom: string;
 
-  @Column()
+  @Column("text")
   modele: string;
 
   @Column()
   langue: string;
+
+  @Column({ nullable: true })
+  category: string;
+
+  @Column({ default: true })
+  active: boolean;
 
   @CreateDateColumn()
   createdAt: Date;

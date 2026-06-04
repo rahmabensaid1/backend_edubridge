@@ -3,6 +3,7 @@ export interface CreateProfile {
   lastName?: string;
   email?: string;
   phone?: string;
+  phoneCountryCode?: string;
   birthDate?: string;
   sex?: string;
   nationality?: string;
@@ -31,6 +32,7 @@ export interface CreateProfile {
   bio?: string;
   avatarUrl?: string;
   academicDocuments?: string;
+  academicDocumentName?: string;
   academicInterests?: string;
   personalInterests?: string;
 }

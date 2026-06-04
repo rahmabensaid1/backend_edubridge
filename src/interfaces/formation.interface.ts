@@ -2,6 +2,7 @@ export interface IFormation {
   id: number;
   titre: string;
   description: string;
+  domaine?: string;
   niveauRequis: string;
   fraisInscription: number;
   duree: string;

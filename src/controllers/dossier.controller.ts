@@ -63,16 +63,20 @@ export const updateDossierStatus = async (req: Request, res: Response) => {
     return res.status(400).json({ message: "Status is required" });
   }
 
-  const updated = await dossierService.updateDossierStatusService(id, status);
+  try {
+    const updated = await dossierService.updateDossierStatusService(id, status);
 
-  if (!updated) {
-    return res.status(404).json({ message: "Dossier not found" });
+    if (!updated) {
+      return res.status(404).json({ message: "Dossier not found" });
+    }
+
+    res.json({
+      message: "Dossier status updated",
+      updated
+    });
+  } catch (error: any) {
+    return res.status(400).json({ message: error.message });
   }
-
-  res.json({
-    message: "Dossier status updated",
-    updated
-  });
 };
 
 export const deleteDossier = async (req: Request, res: Response) => {

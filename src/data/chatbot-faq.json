@@ -1,0 +1,504 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "question": "Comment créer un compte étudiant sur TuniBridge ?",
+      "answer": "Cliquez sur Sign Up, remplissez votre nom, prénom, adresse e-mail et mot de passe, puis validez votre inscription. Après la connexion, complétez votre profil académique pour obtenir des recommandations personnalisées."
+    },
+    {
+      "id": 2,
+      "question": "Comment me connecter à mon espace étudiant ?",
+      "answer": "Cliquez sur Sign In, saisissez votre adresse e-mail et votre mot de passe, puis connectez-vous. Vous serez redirigé vers votre dashboard étudiant."
+    },
+    {
+      "id": 3,
+      "question": "Que faire si j’ai oublié mon mot de passe ?",
+      "answer": "Utilisez l’option Réinitialiser mot de passe dans la page de connexion. Saisissez votre adresse e-mail, puis suivez les instructions affichées par la plateforme."
+    },
+    {
+      "id": 4,
+      "question": "Est-ce que je peux me connecter avec Google ?",
+      "answer": "Oui, la plateforme propose une connexion avec Google si cette option est activée dans le projet. Elle permet de créer ou retrouver votre compte étudiant plus rapidement."
+    },
+    {
+      "id": 5,
+      "question": "Pourquoi dois-je remplir mon profil académique ?",
+      "answer": "Le profil académique permet à TuniBridge d’analyser votre parcours, vos compétences, vos objectifs d’études, votre budget et vos préférences afin de proposer des formations et universités adaptées."
+    },
+    {
+      "id": 6,
+      "question": "Où puis-je modifier mon profil académique ?",
+      "answer": "Après connexion, cliquez sur Profile dans la barre de navigation. Vous pouvez consulter, compléter et modifier vos informations académiques à tout moment."
+    },
+    {
+      "id": 7,
+      "question": "Quelles informations sont demandées dans le profil académique ?",
+      "answer": "Le profil contient les informations personnelles, le parcours académique, les langues, les objectifs d’études, les documents optionnels, les compétences et les centres d’intérêt."
+    },
+    {
+      "id": 8,
+      "question": "La photo de profil est-elle obligatoire ?",
+      "answer": "Non, la photo de profil est optionnelle. Vous pouvez l’ajouter pour personnaliser votre compte, mais elle n’est pas nécessaire pour candidater."
+    },
+    {
+      "id": 9,
+      "question": "Comment changer la langue du site ?",
+      "answer": "Utilisez le bouton FR/EN dans la barre de navigation. En mode FR, le site s’affiche en français. En mode EN, il s’affiche en anglais."
+    },
+    {
+      "id": 10,
+      "question": "Quelle est la différence entre Dashboard et Profile ?",
+      "answer": "Le Dashboard résume vos activités, candidatures et accès rapides. Le Profile contient vos informations personnelles et académiques que vous pouvez modifier."
+    },
+    {
+      "id": 11,
+      "question": "Comment consulter les universités disponibles ?",
+      "answer": "Ouvrez la page Universities. Vous pouvez consulter les établissements disponibles, voir leur ville, leur type public ou privé, leur description et leur site web."
+    },
+    {
+      "id": 12,
+      "question": "Comment filtrer les universités par ville ?",
+      "answer": "Dans la page Universities, utilisez le filtre de ville pour afficher uniquement les établissements situés dans la ville souhaitée, par exemple Tunis, Sousse, Sfax ou Ariana."
+    },
+    {
+      "id": 13,
+      "question": "Comment filtrer les universités publiques et privées ?",
+      "answer": "Dans la page Universities, utilisez le filtre de type pour choisir les établissements publics, privés ou tous les types."
+    },
+    {
+      "id": 14,
+      "question": "Comment voir les formations d’une université ?",
+      "answer": "Depuis la page Universities, cliquez sur le bouton qui mène aux formations détaillées de l’établissement. Vous serez redirigé vers la page Formations filtrée par université."
+    },
+    {
+      "id": 15,
+      "question": "Quelle est la différence entre Universities et Formations ?",
+      "answer": "Universities présente les établissements. Formations présente les programmes disponibles avec le domaine, le niveau requis, la durée, la langue d’étude, les frais et l’université associée."
+    },
+    {
+      "id": 16,
+      "question": "Comment chercher une formation en informatique ?",
+      "answer": "Ouvrez la page Formations, puis utilisez la recherche ou le filtre de domaine. Tapez Informatique, IA, Data Science, Génie Logiciel ou un mot-clé proche."
+    },
+    {
+      "id": 17,
+      "question": "Comment trouver une formation en business ou management ?",
+      "answer": "Dans la page Formations, recherchez Business, Management, Marketing, Finance ou entrepreneuriat. Vous pouvez aussi filtrer par établissement et par langue d’étude."
+    },
+    {
+      "id": 18,
+      "question": "Comment savoir le niveau requis pour une formation ?",
+      "answer": "Chaque carte de formation affiche le niveau requis, par exemple Bac, Licence, Master ou autre condition d’accès indiquée par l’établissement."
+    },
+    {
+      "id": 19,
+      "question": "Comment savoir la durée d’une formation ?",
+      "answer": "La durée est affichée dans les détails de chaque formation. Elle peut être exprimée en années, semestres ou mois selon le programme."
+    },
+    {
+      "id": 20,
+      "question": "Comment connaître les frais d’inscription d’une formation ?",
+      "answer": "Les frais sont affichés dans la carte de formation lorsqu’ils sont disponibles. Pour les montants officiels, vérifiez toujours le site de l’université."
+    },
+    {
+      "id": 21,
+      "question": "Comment candidater à une formation ?",
+      "answer": "Ouvrez la page Formations, choisissez la formation qui vous intéresse, puis cliquez sur le bouton de candidature. Complétez ensuite les informations demandées."
+    },
+    {
+      "id": 22,
+      "question": "Puis-je candidater à plusieurs formations ?",
+      "answer": "Oui, vous pouvez déposer plusieurs candidatures si les formations correspondent à votre profil et si vous fournissez les documents nécessaires pour chaque dossier."
+    },
+    {
+      "id": 23,
+      "question": "Où consulter mes candidatures ?",
+      "answer": "Ouvrez la page My Applications. Vous y trouverez vos dossiers, les formations demandées, les établissements associés et l’état de chaque candidature."
+    },
+    {
+      "id": 24,
+      "question": "Quels sont les statuts possibles d’une candidature ?",
+      "answer": "Une candidature peut être en attente, acceptée ou rejetée selon la décision de l’administration. Le statut est visible dans My Applications."
+    },
+    {
+      "id": 25,
+      "question": "Comment savoir si l’admin a accepté mon dossier ?",
+      "answer": "Vous recevrez une notification dans la barre de navigation lorsque l’admin accepte ou rejette votre dossier. Vous pouvez aussi vérifier la page My Applications."
+    },
+    {
+      "id": 26,
+      "question": "Est-ce que l’admin peut rejeter une candidature ?",
+      "answer": "Oui, l’admin peut accepter ou rejeter un dossier selon les informations fournies, les documents envoyés et les critères de la formation."
+    },
+    {
+      "id": 27,
+      "question": "Quels documents dois-je préparer pour une candidature ?",
+      "answer": "Préparez généralement une copie du diplôme, les relevés de notes, une pièce d’identité ou passeport, un CV, une photo, une lettre de motivation et tout document demandé par l’établissement."
+    },
+    {
+      "id": 28,
+      "question": "Où télécharger mes documents pour une candidature ?",
+      "answer": "Lors de la procédure de candidature, utilisez la partie Documents pour envoyer les fichiers nécessaires. Les documents permettent à l’admin d’évaluer votre dossier."
+    },
+    {
+      "id": 29,
+      "question": "Est-ce que je peux déposer un CV sans candidature ?",
+      "answer": "Oui, le profil académique peut contenir des documents optionnels comme un CV ou des certificats utiles même avant de candidater."
+    },
+    {
+      "id": 30,
+      "question": "Comment compléter mon dossier avant de l’envoyer ?",
+      "answer": "Vérifiez votre profil académique, choisissez la formation, consultez les procédures, ajoutez les documents demandés, puis soumettez votre candidature."
+    },
+    {
+      "id": 31,
+      "question": "Où trouver les procédures d’inscription ?",
+      "answer": "Consultez la page Procedures ou la partie procédure liée à la formation choisie. Elle indique les étapes générales et les documents nécessaires."
+    },
+    {
+      "id": 32,
+      "question": "Les procédures sont-elles officielles ?",
+      "answer": "TuniBridge fournit une aide et des informations pratiques. Pour les règles définitives, vérifiez toujours les annonces et le site officiel de l’université concernée."
+    },
+    {
+      "id": 33,
+      "question": "Comment choisir une formation adaptée à mon profil ?",
+      "answer": "Complétez votre profil académique puis consultez les recommandations IA. Vous pouvez aussi filtrer les formations par domaine, niveau, langue, frais et université."
+    },
+    {
+      "id": 34,
+      "question": "À quoi sert la page Recommendations ?",
+      "answer": "La page Recommendations affichera les formations recommandées par l’IA selon votre parcours, vos compétences, votre budget, vos langues et vos objectifs d’études."
+    },
+    {
+      "id": 35,
+      "question": "Pourquoi je ne vois pas encore de recommandations ?",
+      "answer": "Les recommandations dépendent de votre profil académique et du module IA. Si elles ne s’affichent pas encore, complétez votre profil ou attendez l’activation complète du matching IA."
+    },
+    {
+      "id": 36,
+      "question": "Quels critères l’IA utilise pour recommander une formation ?",
+      "answer": "L’IA peut utiliser le niveau d’étude, le diplôme, la moyenne, les compétences, les langues, le domaine souhaité, la ville, le budget et les préférences d’universités."
+    },
+    {
+      "id": 37,
+      "question": "Puis-je modifier mon profil pour améliorer les recommandations ?",
+      "answer": "Oui, vous pouvez mettre à jour votre profil à tout moment. Les recommandations seront plus pertinentes si vos informations sont complètes et exactes."
+    },
+    {
+      "id": 38,
+      "question": "Le chatbot peut-il m’aider à choisir une formation ?",
+      "answer": "Oui, le chatbot peut vous expliquer les formations disponibles, comparer des options, proposer des critères de choix et vous guider vers les pages utiles."
+    },
+    {
+      "id": 39,
+      "question": "Le chatbot peut-il donner une réponse personnalisée ?",
+      "answer": "Oui, s’il reçoit les informations de votre profil et de vos candidatures, il peut adapter ses réponses à votre parcours et à vos objectifs."
+    },
+    {
+      "id": 40,
+      "question": "Le chatbot remplace-t-il l’administration de l’université ?",
+      "answer": "Non, le chatbot donne une assistance et des conseils. Les décisions officielles et les conditions exactes doivent être confirmées par l’université ou l’administration."
+    },
+    {
+      "id": 41,
+      "question": "Comment poser une question au chatbot ?",
+      "answer": "Ouvrez la page Chatbot ou cliquez sur l’assistant flottant, écrivez votre question, puis envoyez-la. Vous pouvez poser des questions sur les universités, formations, dossiers, logement et procédures."
+    },
+    {
+      "id": 42,
+      "question": "Pourquoi le chatbot met du temps à répondre ?",
+      "answer": "Le temps de réponse dépend de l’API IA, de la connexion Internet et de la quantité de contexte envoyé. Une question courte et précise reçoit généralement une réponse plus rapide."
+    },
+    {
+      "id": 43,
+      "question": "Puis-je demander au chatbot les documents nécessaires ?",
+      "answer": "Oui, demandez par exemple quels documents préparer pour une licence, un master ou une formation précise. Le chatbot peut lister les documents habituels et vous rappeler de vérifier l’université."
+    },
+    {
+      "id": 44,
+      "question": "Puis-je demander au chatbot des conseils de logement ?",
+      "answer": "Oui, le chatbot peut vous orienter vers la page Housing, expliquer comment filtrer les logements par ville et rappeler de contacter le colocataire ou propriétaire affiché."
+    },
+    {
+      "id": 45,
+      "question": "Comment consulter les logements disponibles ?",
+      "answer": "Ouvrez la page Housing puis cliquez sur Learn More ou Browse Offers. Vous accéderez à une liste de logements imaginaires filtrables par ville."
+    },
+    {
+      "id": 46,
+      "question": "Comment filtrer les logements par ville ?",
+      "answer": "Dans la page des offres de logement, utilisez le filtre de ville pour afficher les logements disponibles à Tunis, Sousse, Sfax, Ariana ou d’autres villes."
+    },
+    {
+      "id": 47,
+      "question": "Comment contacter un colocataire ou propriétaire ?",
+      "answer": "Cliquez sur une offre de logement pour afficher les coordonnées disponibles, comme le téléphone ou l’e-mail du contact."
+    },
+    {
+      "id": 48,
+      "question": "Les logements affichés sont-ils réels ?",
+      "answer": "Dans la version actuelle, la liste peut contenir des exemples imaginaires pour démontrer la fonctionnalité. Vérifiez toujours les informations avant toute décision réelle."
+    },
+    {
+      "id": 49,
+      "question": "Comment participer à un événement étudiant ?",
+      "answer": "Ouvrez la page Events, consultez les événements disponibles et cliquez sur le bouton de participation ou d’inscription selon l’événement."
+    },
+    {
+      "id": 50,
+      "question": "Comment créer un événement étudiant ?",
+      "answer": "Dans la page Events, utilisez le formulaire de création d’événement. Ajoutez le titre, la date, le lieu, la description et les informations nécessaires."
+    },
+    {
+      "id": 51,
+      "question": "Où voir les événements auxquels je participe ?",
+      "answer": "La page Events contient aussi vos événements enregistrés. Vous n’avez pas besoin d’une page séparée My Events."
+    },
+    {
+      "id": 52,
+      "question": "Est-ce que l’admin voit les inscriptions aux événements ?",
+      "answer": "Oui, l’espace admin peut consulter et gérer les événements ainsi que les inscriptions associées si cette fonctionnalité est activée."
+    },
+    {
+      "id": 53,
+      "question": "À quoi sert la page Student Life ?",
+      "answer": "Student Life est un espace communautaire où les étudiants peuvent lire des publications, aimer, commenter et publier leurs propres messages."
+    },
+    {
+      "id": 54,
+      "question": "Comment publier dans Student Life ?",
+      "answer": "Ouvrez Student Life, écrivez votre publication dans la zone de texte, puis cliquez sur Publier. Votre message apparaîtra dans le fil communautaire."
+    },
+    {
+      "id": 55,
+      "question": "Puis-je commenter une publication d’un autre étudiant ?",
+      "answer": "Oui, vous pouvez commenter les publications dans Student Life pour poser une question, répondre ou partager un conseil."
+    },
+    {
+      "id": 56,
+      "question": "Puis-je aimer une publication ?",
+      "answer": "Oui, les publications de Student Life peuvent être likées pour montrer votre intérêt ou votre soutien."
+    },
+    {
+      "id": 57,
+      "question": "Comment consulter mon dashboard étudiant ?",
+      "answer": "Cliquez sur Dashboard dans la barre de navigation. Vous y trouverez un résumé de vos activités, candidatures et accès rapides."
+    },
+    {
+      "id": 58,
+      "question": "Comment accéder à mon profil depuis la barre de navigation ?",
+      "answer": "Cliquez sur Profile dans la barre de navigation. Cette page affiche votre profil académique et vos informations personnelles."
+    },
+    {
+      "id": 59,
+      "question": "Comment se déconnecter de TuniBridge ?",
+      "answer": "Cliquez sur Logout dans la barre de navigation pour fermer votre session et revenir à l’accès public."
+    },
+    {
+      "id": 60,
+      "question": "Qu’est-ce qu’un dossier de candidature ?",
+      "answer": "Un dossier de candidature regroupe votre demande pour une formation, votre statut, vos informations étudiant et les documents nécessaires à l’évaluation."
+    },
+    {
+      "id": 61,
+      "question": "Comment savoir si mon dossier est complet ?",
+      "answer": "Vérifiez que votre profil académique est rempli, que la formation est choisie et que les documents demandés sont ajoutés avant de soumettre la candidature."
+    },
+    {
+      "id": 62,
+      "question": "Puis-je modifier une candidature après l’avoir envoyée ?",
+      "answer": "Cela dépend de l’état du dossier. Si la plateforme le permet, modifiez les informations ou documents avant la décision de l’admin."
+    },
+    {
+      "id": 63,
+      "question": "Que signifie une candidature en attente ?",
+      "answer": "Une candidature en attente signifie que votre dossier a été soumis mais n’a pas encore été accepté ou rejeté par l’administration."
+    },
+    {
+      "id": 64,
+      "question": "Que faire si ma candidature est rejetée ?",
+      "answer": "Consultez les informations du dossier, vérifiez les documents et choisissez une autre formation adaptée. Vous pouvez aussi contacter l’établissement pour plus de détails."
+    },
+    {
+      "id": 65,
+      "question": "Que faire si ma candidature est acceptée ?",
+      "answer": "Consultez la notification et la page My Applications, puis préparez les étapes suivantes indiquées par l’établissement, comme l’inscription finale ou les documents complémentaires."
+    },
+    {
+      "id": 66,
+      "question": "Comment consulter mes notifications ?",
+      "answer": "Cliquez sur l’icône de notification dans la barre de navigation. Elle affiche les messages importants, notamment les décisions sur vos candidatures."
+    },
+    {
+      "id": 67,
+      "question": "Pourquoi je ne reçois pas de notification ?",
+      "answer": "Vous recevez une notification lorsqu’un événement important se produit, par exemple une décision admin. Si rien n’a changé, il est normal de ne pas avoir de nouvelle notification."
+    },
+    {
+      "id": 68,
+      "question": "Est-ce que mes informations personnelles sont utilisées pour le matching IA ?",
+      "answer": "Oui, certaines informations du profil académique peuvent être utilisées pour recommander des formations pertinentes, comme le niveau, les compétences, les langues, le domaine et le budget."
+    },
+    {
+      "id": 69,
+      "question": "Est-ce que je peux laisser des champs vides dans mon profil ?",
+      "answer": "Certains champs peuvent être optionnels, mais un profil incomplet peut réduire la qualité des recommandations et compliquer l’analyse de votre dossier."
+    },
+    {
+      "id": 70,
+      "question": "Quels domaines d’étude puis-je choisir ?",
+      "answer": "Vous pouvez choisir des domaines comme Informatique, IA, Data Science, Business, Médecine, Architecture, Ingénierie, Finance, Marketing ou d’autres spécialités disponibles."
+    },
+    {
+      "id": 71,
+      "question": "Quelles langues d’étude sont disponibles ?",
+      "answer": "Les formations peuvent être proposées en français, anglais ou parfois dans d’autres langues selon l’établissement. La langue est affichée dans les détails de la formation."
+    },
+    {
+      "id": 72,
+      "question": "Comment indiquer mon niveau de langue ?",
+      "answer": "Dans le profil académique, ajoutez les langues parlées et votre niveau, par exemple A1, A2, B1, B2, C1, C2, débutant, intermédiaire ou avancé."
+    },
+    {
+      "id": 73,
+      "question": "Comment indiquer mon budget d’études ?",
+      "answer": "Dans votre profil académique, renseignez le budget estimé. Cela aidera la plateforme à comparer les frais des formations avec vos possibilités."
+    },
+    {
+      "id": 74,
+      "question": "Comment savoir si une université est publique ou privée ?",
+      "answer": "La page Universities affiche un badge public ou private pour chaque établissement. Vous pouvez aussi utiliser le filtre de type."
+    },
+    {
+      "id": 75,
+      "question": "Quels établissements privés puis-je trouver sur TuniBridge ?",
+      "answer": "La plateforme peut afficher des établissements privés comme ESPRIT, Université Centrale, SESAME, MSB, MedTech, EPI ou Polytechnique Sousse selon les données enregistrées."
+    },
+    {
+      "id": 76,
+      "question": "Quels établissements publics puis-je trouver sur TuniBridge ?",
+      "answer": "La plateforme peut afficher des établissements publics comme l’Université de Tunis El Manar, l’Université de Carthage, l’Université de Sfax et d’autres établissements tunisiens disponibles dans la base."
+    },
+    {
+      "id": 77,
+      "question": "Comment accéder au site officiel d’une université ?",
+      "answer": "Dans la page Universities, utilisez le bouton Site lorsqu’il est disponible. Il vous redirige vers le site web de l’établissement."
+    },
+    {
+      "id": 78,
+      "question": "Puis-je comparer plusieurs formations ?",
+      "answer": "Oui, vous pouvez utiliser les filtres de la page Formations pour comparer le domaine, la durée, la langue, les frais, le niveau requis et l’établissement."
+    },
+    {
+      "id": 79,
+      "question": "Comment trouver une formation en anglais ?",
+      "answer": "Dans Formations, utilisez le filtre de langue si disponible ou recherchez English. Vérifiez ensuite la langue indiquée dans chaque carte de formation."
+    },
+    {
+      "id": 80,
+      "question": "Comment trouver une formation avec frais abordables ?",
+      "answer": "Consultez les frais affichés dans les cartes de formation et comparez-les avec votre budget. Les établissements publics peuvent parfois avoir des frais plus bas."
+    },
+    {
+      "id": 81,
+      "question": "Comment choisir entre une université publique et privée ?",
+      "answer": "Comparez les frais, la ville, le domaine, la réputation, la langue d’étude, les conditions d’admission et les formations disponibles selon votre objectif."
+    },
+    {
+      "id": 82,
+      "question": "Est-ce que TuniBridge fait l’inscription officielle à ma place ?",
+      "answer": "TuniBridge vous aide à préparer et suivre votre candidature. L’inscription officielle finale dépend toujours de l’établissement choisi."
+    },
+    {
+      "id": 83,
+      "question": "Comment contacter une université ?",
+      "answer": "Utilisez le site officiel affiché dans la page Universities ou les informations fournies par l’établissement. TuniBridge peut aussi vous guider vers la bonne page."
+    },
+    {
+      "id": 84,
+      "question": "Puis-je utiliser TuniBridge sans profil complet ?",
+      "answer": "Oui, vous pouvez parcourir certaines pages, mais il est conseillé de compléter votre profil pour candidater correctement et recevoir de meilleures recommandations."
+    },
+    {
+      "id": 85,
+      "question": "Pourquoi mon e-mail apparaît dans la barre de navigation ?",
+      "answer": "L’e-mail affiché permet d’identifier le compte connecté. Il confirme que vous utilisez bien votre propre session étudiant."
+    },
+    {
+      "id": 86,
+      "question": "L’admin doit-il créer un compte étudiant ?",
+      "answer": "Non, l’admin possède généralement un compte déjà créé dans la base de données. Il se connecte directement pour accéder au dashboard admin."
+    },
+    {
+      "id": 87,
+      "question": "Quel est le rôle de l’admin ?",
+      "answer": "L’admin gère les utilisateurs, les universités, les formations, les événements, les candidatures et les décisions d’acceptation ou de rejet."
+    },
+    {
+      "id": 88,
+      "question": "Un étudiant peut-il accéder au dashboard admin ?",
+      "answer": "Non, le dashboard admin est réservé aux comptes administrateurs. Les étudiants accèdent uniquement à leur espace étudiant."
+    },
+    {
+      "id": 89,
+      "question": "Pourquoi une formation n’apparaît pas dans la liste ?",
+      "answer": "Elle peut ne pas encore être ajoutée à la base de données ou ne pas correspondre aux filtres appliqués. Réinitialisez les filtres ou demandez à l’admin de l’ajouter."
+    },
+    {
+      "id": 90,
+      "question": "Pourquoi la liste des universités est vide ?",
+      "answer": "La liste peut être vide si les données ne sont pas encore ajoutées dans la base, si le backend ne fonctionne pas ou si un filtre cache tous les résultats."
+    },
+    {
+      "id": 91,
+      "question": "Que faire si une page ne charge pas ?",
+      "answer": "Vérifiez votre connexion, rechargez la page et assurez-vous que le backend est démarré. Si le problème continue, vérifiez les messages d’erreur côté serveur."
+    },
+    {
+      "id": 92,
+      "question": "Le chatbot peut-il répondre en français et en anglais ?",
+      "answer": "Oui, le chatbot doit répondre dans la même langue que l’utilisateur. Posez votre question en français pour une réponse en français ou en anglais pour une réponse en anglais."
+    },
+    {
+      "id": 93,
+      "question": "Puis-je demander au chatbot de résumer une procédure ?",
+      "answer": "Oui, vous pouvez demander une explication simple des étapes d’inscription, des documents à préparer ou de la manière de candidater."
+    },
+    {
+      "id": 94,
+      "question": "Puis-je demander au chatbot une comparaison entre deux universités ?",
+      "answer": "Oui, indiquez les deux universités ou formations à comparer. Le chatbot peut comparer la ville, le type, les domaines, la langue, les frais et les formations disponibles."
+    },
+    {
+      "id": 95,
+      "question": "Comment savoir quelle formation correspond à ma moyenne ?",
+      "answer": "Renseignez votre moyenne dans le profil académique. Le système de recommandation pourra ensuite comparer votre profil avec les niveaux requis des formations."
+    },
+    {
+      "id": 96,
+      "question": "Comment ajouter mes matières fortes ?",
+      "answer": "Dans Profile, remplissez la partie Matières fortes avec les matières où vous êtes le plus à l’aise, comme mathématiques, informatique, biologie, économie ou langues."
+    },
+    {
+      "id": 97,
+      "question": "Comment ajouter mes compétences techniques ?",
+      "answer": "Dans votre profil académique, ajoutez vos compétences comme programmation, analyse de données, design, communication, gestion de projet ou autres compétences utiles."
+    },
+    {
+      "id": 98,
+      "question": "Comment choisir mes universités préférées ?",
+      "answer": "Dans le profil académique, renseignez les universités qui vous intéressent. Cette préférence peut aider le système à mieux orienter les recommandations."
+    },
+    {
+      "id": 99,
+      "question": "Est-ce que je peux utiliser TuniBridge pour préparer mon départ en Tunisie ?",
+      "answer": "Oui, TuniBridge vous aide à explorer les universités, choisir une formation, préparer les documents, suivre les candidatures, consulter le logement et participer à la vie étudiante."
+    },
+    {
+      "id": 100,
+      "question": "Quelle est la meilleure première étape sur TuniBridge ?",
+      "answer": "La meilleure première étape est de créer votre compte, compléter votre profil académique, explorer les universités et formations, puis déposer une candidature adaptée à votre projet d’études."
+    }
+  ]
+}

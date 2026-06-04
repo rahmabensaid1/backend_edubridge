@@ -24,6 +24,9 @@ export class Formation {
   @Column("text")
   description: string;
 
+  @Column({ default: "Général" })
+  domaine: string;
+
   @Column()
   niveauRequis: string;
 

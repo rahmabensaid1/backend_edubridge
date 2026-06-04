@@ -30,6 +30,22 @@ export const deleteChatbot = async (req: Request, res: Response) => {
   res.json({ message: "Chatbot deleted" });
 };
 
+export const updateChatbot = async (req: Request, res: Response) => {
+  const result = ValidateChatbotSchema.safeParse(req.body);
+
+  if (!result.success) {
+    return res.status(400).json({ message: result.error.issues[0].message });
+  }
+
+  const chatbot = await chatbotService.updateChatbotService(Number(req.params.id), result.data);
+
+  if (!chatbot) {
+    return res.status(404).json({ message: "Chatbot response not found" });
+  }
+
+  return res.json({ message: "Chatbot response updated", chatbot });
+};
+
 export const askChatbot = async (req: Request, res: Response) => {
   try {
     const { message, userId } = req.body;

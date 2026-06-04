@@ -16,8 +16,39 @@ export class DossierService {
     this.notificationService = new NotificationService();
   }
 
+  private calculateCompletionScore(data: any, documents: any[] = []): number {
+    const requiredFields = [
+      "fullName",
+      "sex",
+      "phoneCountryCode",
+      "phone",
+      "nationality",
+      "lastDiploma",
+      "motivation"
+    ];
+    const filledFields = requiredFields.filter((field) =>
+      String(data[field] || "").trim()
+    ).length;
+    const requiredDocuments = ["Passeport ou CIN", "Dernier diplôme", "Relevé de notes", "Lettre de motivation"];
+    const uploadedRequiredDocuments = requiredDocuments.filter((label) =>
+      documents.some((document) => document.type === label && document.urlStockage)
+    ).length;
+
+    return Math.round(
+      ((filledFields + uploadedRequiredDocuments) /
+        (requiredFields.length + requiredDocuments.length)) *
+        100
+    );
+  }
+
   async createDossierService(data: CreateDossier): Promise<Dossier> {
     const documents = (data as any).documents || [];
+    const completionScore = this.calculateCompletionScore(data, documents);
+
+    if (completionScore < 100) {
+      throw new Error("Le dossier doit être complet avant la soumission.");
+    }
+
     const dossier: Dossier = this.dossierRepo.create({
       ...data,
       documents: undefined,
@@ -27,6 +58,7 @@ export class DossierService {
       priorite: (data as any).priorite || "normal",
       status: (data as any).status || "PENDING",
       motif: (data as any).motif || "",
+      completionScore,
       user: (data as any).user,
       formation: (data as any).formation
     });
@@ -69,6 +101,16 @@ export class DossierService {
   }
 
   async updateDossierStatusService(id: number, status: string): Promise<Dossier | null> {
+    const existingDossier = await this.getDossierByIdService(id);
+
+    if (!existingDossier) {
+      return null;
+    }
+
+    if (["ACCEPTED", "REJECTED"].includes(existingDossier.status)) {
+      throw new Error("Cette candidature a déjà reçu une décision finale.");
+    }
+
     await this.dossierRepo.update(id, { status });
     const dossier = await this.getDossierByIdService(id);
 

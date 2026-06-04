@@ -45,6 +45,12 @@ export class Dossier {
   phone: string;
 
   @Column({ nullable: true })
+  phoneCountryCode: string;
+
+  @Column({ nullable: true })
+  sex: string;
+
+  @Column({ nullable: true })
   nationality: string;
 
   @Column({ nullable: true })
@@ -52,6 +58,9 @@ export class Dossier {
 
   @Column("text", { nullable: true })
   motivation: string;
+
+  @Column({ default: 0 })
+  completionScore: number;
 
   @ManyToOne(() => User, { nullable: true })
   user: User;

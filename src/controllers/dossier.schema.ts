@@ -10,9 +10,12 @@ export const ValidateDossierSchema = z.object({
   motif: z.string().optional(),
   fullName: z.string().optional(),
   phone: z.string().optional(),
+  phoneCountryCode: z.string().optional(),
+  sex: z.string().optional(),
   nationality: z.string().optional(),
   lastDiploma: z.string().optional(),
   motivation: z.string().optional(),
+  completionScore: z.number().optional(),
   user: z.object({ id: z.number() }).optional(),
   formation: z.object({ id: z.number() }).optional(),
   documents: z.array(z.object({

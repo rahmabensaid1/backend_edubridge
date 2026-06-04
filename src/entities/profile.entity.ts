@@ -27,6 +27,9 @@ export class Profile {
   phone: string;
 
   @Column({ nullable: true })
+  phoneCountryCode: string;
+
+  @Column({ nullable: true })
   birthDate: string;
 
   @Column({ nullable: true })
@@ -109,6 +112,9 @@ export class Profile {
 
   @Column("text", { nullable: true })
   academicDocuments: string;
+
+  @Column({ nullable: true })
+  academicDocumentName: string;
 
   @Column("text", { nullable: true })
   academicInterests: string;

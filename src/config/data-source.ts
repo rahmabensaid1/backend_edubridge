@@ -14,6 +14,7 @@ import { Chat } from "../entities/chat.entity";
 import { Chatbot } from "../entities/chatbot.entity";
 import { Recommendation } from "../entities/recommendation.entity";
 import { Statistique } from "../entities/statistique.entity";
+import { HousingOffer } from "../entities/housing-offer.entity";
 
 export const AppDataSource = new DataSource({
     type: "postgres",
@@ -38,6 +39,7 @@ export const AppDataSource = new DataSource({
         Chat,
         Chatbot,
         Recommendation,
-        Statistique
+        Statistique,
+        HousingOffer
     ],
 })

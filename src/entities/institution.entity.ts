@@ -35,6 +35,9 @@ export class Institution {
   @Column()
   type: string; // university / school / institute
 
+  @Column({ nullable: true })
+  parentUniversity: string;
+
   @Column()
   pays: string;
 
